@@ -1,4 +1,5 @@
-# C&S experiments
+# 
+Textual Preprocessing for Qwen-Based Medical Image Captioning
 
 ## Dataset access
 
