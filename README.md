@@ -312,3 +312,24 @@ python -m analysis.prediction_behavior_analysis.conversational_leakage \
 
 Omit either prediction flag to analyze a single variant. The summary is
 printed to the terminal and saved to CSV when `--output-csv` is supplied.
+
+## Citation
+
+If you use this code or the preprocessing prompts in your research, please cite the accompanying manuscript.
+
+### Plain text
+
+Rascón-Cervantes, S., Ramirez-Alonso, G., Lopez-Santillan, R., Lopez-Flores, D. R., & López-Monroy, A. P. (2026). *Textual Preprocessing for Qwen-Based Medical Image Captioning* [Manuscript under review].
+
+### BibTeX (LaTeX)
+
+```bibtex
+@unpublished{rasconcervantes2026textual,
+  author = {Rasc{\'o}n-Cervantes, Sebasti{\'a}n and Ramirez-Alonso, Graciela and
+            Lopez-Santillan, Roberto and Lopez-Flores, David R. and
+            L{\'o}pez-Monroy, Adri{\'a}n Pastor},
+  title  = {Textual Preprocessing for {Qwen}-Based Medical Image Captioning},
+  year   = {2026},
+  note   = {Manuscript under review}
+}
+```
