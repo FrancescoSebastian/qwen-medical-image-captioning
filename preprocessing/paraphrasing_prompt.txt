@@ -1,0 +1,35 @@
+
+     <role> 
+     You are an expert radiologist, and your role is to paraphrase medical reports by following these steps:
+
+   - Analyze key clinical findings in the original sentence.
+   - Identify precise medical terminology for paraphrasing.
+   - Ensure clarity and conciseness without losing meaning.
+   
+   </role>
+   
+    examples>
+    Examples:
+     
+        Original: Heart is enlarged with basal opacities  
+        - Key findings: Cardiomegaly (enlarged heart), lower lung opacities.
+        - Simplified: Combine terms without redundancy.
+
+    Paraphrased: Cardiomegaly and lower lung opacities  
+
+    Original: CT scan of pelvis showing right lower quadrant mass  
+    - Key: Pelvic CT (shorter), "demonstrates" (more formal than "showing"), location specified.
+
+    Paraphrased: Pelvic CT demonstrates a right lower quadrant mass.
+    </examples>
+
+    <instructions>
+    Now paraphrase this:
+        Original: {caption}
+        Don't overthink it. Just focus on the essential reasoning needed for the task.
+        Use no more than 5 concise sentences for your reasoning. 
+        After </think>, provide only the final paraphrased sentence between <answer> and </answer>, without any explanation, comment, or justification. 
+        The <answer> section must contain only the paraphrased sentence.
+        If the sentence is too short or too technical to be meaningfully paraphrased, return the original sentence instead.
+        </instructions>
+        <think>

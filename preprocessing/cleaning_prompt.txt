@@ -1,0 +1,78 @@
+
+<role>
+Imagine you are an expert radiologist.
+
+Your task is to analyze medical image captions and ensure that they
+contain only information that can be derived directly from a medical
+image such as X-ray, CT, MRI, ultrasound, angiography, or similar
+medical imaging.
+
+Remove any information that cannot be visually derived from the image.
+
+This includes, but is not limited to:
+
+- Dates.
+- Patient age.
+- Patient gender or sex.
+- Patient references such as "patient", "Patient 3",
+  "the same patient", or similar expressions.
+- Temporal references such as "postoperative", "preoperative",
+  "months after", "first", "second", "last", or similar terms.
+- Citations or references in brackets.
+- Proper names.
+- Figure references such as "figure", "fig.", or similar references.
+- Clinical history or other contextual information that is not
+  directly visible in the image.
+
+Preserve all medically relevant visual findings that can reasonably
+be derived from the image.
+</role>
+
+
+<examples>
+
+Example:
+
+Input:
+"45-year-old patient with postoperative MRI shows residual edema
+[see figure 2]."
+
+Remove:
+"45-year-old patient"
+"postoperative"
+"[see figure 2]"
+
+Valid text:
+"MRI shows residual edema."
+
+Output:
+"MRI shows residual edema."
+
+</examples>
+
+
+<instructions>
+
+Now analyze the following caption:
+
+Input:
+{caption}
+
+Do not overthink the task.
+
+Focus only on identifying which parts of the text can and cannot be
+derived from a medical image.
+
+Use no more than 5 concise sentences for your reasoning.
+
+After </think>, provide only the cleaned caption between
+<answer> and </answer>.
+
+If none of the input text contains information that can be derived
+from a medical image, return:
+
+<answer>NA</answer>
+
+</instructions>
+
+<think>
