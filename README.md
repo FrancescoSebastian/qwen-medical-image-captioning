@@ -1,5 +1,4 @@
-# 
-Textual Preprocessing for Qwen-Based Medical Image Captioning
+# Textual Preprocessing for Qwen-Based Medical Image Captioning
 
 ## Dataset access
 
